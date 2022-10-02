@@ -1,3 +1,5 @@
+package az.coders.task1;
+
 import java.util.Scanner;
 
 public class Main {
