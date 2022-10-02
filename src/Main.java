@@ -35,6 +35,13 @@ public class Main {
             } else if (result < 0) {
                 System.out.println("Menfidir");
             }
+            if (result %2==0) {
+                System.out.println(result+" sayisi cut sayidir");
+
+            }
+            else {
+                System.out.println(result+" sayisi tek sayidir");
+            }
         } else if (method == cixma) {
             System.out.println("You choosen '-' method");
             System.out.println("Enter first number");
@@ -47,6 +54,13 @@ public class Main {
                 System.out.println("Musbetdir");
             } else if (result < 0) {
                 System.out.println("Menfidir");
+            }
+            if (result %2==0) {
+                System.out.println(result+" sayisi cut sayidir");
+
+            }
+            else {
+                System.out.println(result+" sayisi tek sayidir");
             }
         }
         else if (method == vurma) {
@@ -62,6 +76,13 @@ public class Main {
             } else if (result < 0) {
                 System.out.println("Menfidir");
             }
+            if (result %2==0) {
+                System.out.println(result+" sayisi cut sayidir");
+
+            }
+            else {
+                System.out.println(result+" sayisi tek sayidir");
+            }
         }
         else if (method == bolme) {
             System.out.println("You choosen '/' method");
@@ -75,6 +96,13 @@ public class Main {
                 System.out.println("Musbetdir");
             } else if (result < 0) {
                 System.out.println("Menfidir");
+            }
+            if (result %2==0) {
+                System.out.println(result+" sayisi cut sayidir");
+
+            }
+            else {
+                System.out.println(result+" sayisi tek sayidir");
             }
 
         }
