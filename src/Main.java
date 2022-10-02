@@ -30,6 +30,11 @@ public class Main {
             b = mySc.nextInt();
             result = a+b;
             System.out.println("Your result: " + result);
+            if (result > 0){
+                System.out.println("Musbetdir");
+            } else if (result < 0) {
+                System.out.println("Menfidir");
+            }
         } else if (method == cixma) {
             System.out.println("You choosen '-' method");
             System.out.println("Enter first number");
@@ -38,6 +43,11 @@ public class Main {
             b = mySc.nextInt();
             result = a-b;
             System.out.println("Your result: " + result);
+            if (result > 0){
+                System.out.println("Musbetdir");
+            } else if (result < 0) {
+                System.out.println("Menfidir");
+            }
         }
         else if (method == vurma) {
             System.out.println("You choosen '*' method");
@@ -47,6 +57,11 @@ public class Main {
             b = mySc.nextInt();
             result = a*b;
             System.out.println("Your result: " + result);
+            if (result > 0){
+                System.out.println("Musbetdir");
+            } else if (result < 0) {
+                System.out.println("Menfidir");
+            }
         }
         else if (method == bolme) {
             System.out.println("You choosen '/' method");
@@ -56,8 +71,15 @@ public class Main {
             b = mySc.nextInt();
             result = a/b;
             System.out.println("Your result: " + result);
+            if (result > 0){
+                System.out.println("Musbetdir");
+            } else if (result < 0) {
+                System.out.println("Menfidir");
+            }
+
         }
         else System.out.println("ERROR");
+
 
 
 
