@@ -1,10 +1,10 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //Data Types
-        int a, b, result;
+        int a, b;
+        double result;
         Scanner mySc = new Scanner(System.in);
 
         System.out.println("**********************Calculator**********************");
@@ -90,20 +90,25 @@ public class Main {
             a = mySc.nextInt();
             System.out.println("Enter 2nd number");
             b = mySc.nextInt();
-            result = a/b;
+            result = (double)a/b;
+            if(result%1==0){
+
+                if (result %2==0) {
+                    System.out.println(result+" sayisi cut sayidir");
+
+                }
+                else {
+                    System.out.println(result+" sayisi tek sayidir");
+                }
+            }else System.out.println("Tam eded deyil");
+
             System.out.println("Your result: " + result);
             if (result > 0){
                 System.out.println("Musbetdir");
             } else if (result < 0) {
                 System.out.println("Menfidir");
             }
-            if (result %2==0) {
-                System.out.println(result+" sayisi cut sayidir");
 
-            }
-            else {
-                System.out.println(result+" sayisi tek sayidir");
-            }
 
         }
         else System.out.println("ERROR");
