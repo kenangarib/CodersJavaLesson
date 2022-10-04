@@ -28,7 +28,7 @@ public class CalculatorSwitchCase {
 
         switch (method) {
 
-            // TOPLAMA
+            // TOPLAMA*******************************************************************************************************
             case '+':
 
                 System.out.println("Int or Double?");
@@ -67,7 +67,7 @@ public class CalculatorSwitchCase {
                 }
                 break;
 
-            //CIXMA
+            //CIXMA****************************************************************************************************
             case '-':
 
                 System.out.println("Int or Double?");
@@ -106,7 +106,7 @@ public class CalculatorSwitchCase {
                 }
                 break;
 
-            //VURMA
+            //VURMA************************************************************************************************************
             case '*':
 
                 System.out.println("Int or Double?");
@@ -145,7 +145,7 @@ public class CalculatorSwitchCase {
                 }
                 break;
 
-            //BOLME
+            //BOLME**************************************************************************************************************
             case '/':
 
                 System.out.println("Int or Double?");
