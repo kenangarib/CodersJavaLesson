@@ -18,8 +18,8 @@ public class Sade {
             if (inputNumber < 2 || inputNumber == 0 || inputNumber < 0) {
                 System.out.println("Zehmet olmasa duzgun reqem girin!");
             }
-
         } while (inputNumber < 2);
+
 
         for (int i = 0; i <= inputNumber; i++) {
             for (int j = 2; j < i; j++) {
