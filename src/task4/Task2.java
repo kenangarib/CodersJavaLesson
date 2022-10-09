@@ -1,12 +1,10 @@
 package task4;
 
-import java.util.Scanner;
-
-public class task2 {
+public class Task2 {
 
     static int isBes(int inputFunk){
         for (int i = 0; i <= inputFunk; i++) {
-            if (i % 5 == 0 && i % 10 == 5) {
+            if ( i % 10 == 5) {
                 System.out.println(i);
             }
         }
@@ -15,9 +13,7 @@ public class task2 {
 
     static int isBir(int inputFunk2){
         for (int j = 0; j <= inputFunk2; j++) {
-            if (true){
                 System.out.println(j*10+1);
-            }
         }
         return inputFunk2;
     }

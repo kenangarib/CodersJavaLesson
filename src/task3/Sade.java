@@ -8,14 +8,13 @@ public class Sade {
 
         Scanner mySc = new Scanner(System.in);
         int inputNumber, say = 0;
-        boolean sade = true;
         System.out.println("***********************  Reqem menfi, 0 ve 1  ola bilmez!   ***************************");
 
         do {
 
             System.out.print("Reqem girin: ");
             inputNumber = mySc.nextInt();
-            if (inputNumber < 2 || inputNumber == 0 || inputNumber < 0) {
+            if (inputNumber < 2) {
                 System.out.println("Zehmet olmasa duzgun reqem girin!");
             }
         } while (inputNumber < 2);
@@ -35,6 +34,7 @@ public class Sade {
                     break;
                 }
             }
+
 
         }
 

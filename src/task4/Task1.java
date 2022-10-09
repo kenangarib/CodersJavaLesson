@@ -2,7 +2,7 @@ package task4;
 
 import java.util.Scanner;
 
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
         Scanner mySc = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -12,7 +12,6 @@ public class task1 {
 
 
         for (int i = input; i <= input2; i++) {
-            //System.out.println(i);
             if (i % 3 == 0 && i % 7 == 0) {
                 System.out.println("- " + i);
             }
