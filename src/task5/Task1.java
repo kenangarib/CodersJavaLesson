@@ -1,24 +1,30 @@
 package task5;
 
+import java.util.Scanner;
+import java.util.Arrays;
+
 public class Task1 {
     public static void main(String[] args) {
 
 
-        while(true){
-            int a = 5;
-            int b = 8;
-            a = (a + b) - a;
-            System.out.println("a = " + a);
-            break;
-        }
-        while (true){
-            int a = 5;
-            int b = 8;
-            b = (a + b) - b;
-            System.out.println("b = " + b);
-            break;
+        Scanner mySc = new Scanner(System.in);
+
+        int[] array = new int[mySc.nextInt()];
+
+        int i = 0;
+
+        while (mySc.hasNextInt()) {
+            array[i] = mySc.nextInt();
+            i++;
+            if (i == array.length) {
+                break;
+            }
         }
 
+        for (int j = 0; j < array.length; j++) {
+            Arrays.sort(array);
+            System.out.println(array[j]);
+        }
 
 
     }
