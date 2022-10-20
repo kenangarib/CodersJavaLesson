@@ -10,8 +10,8 @@ public class task2 {
         int saat = 12;
         int deqiqe = 60;
         int deqiqeyeGoreDerece = 0;
-        int saatDerecesi = 0;
-        int deqiqeDerecesi = 0;
+        double saatDerecesi = 0;
+        double deqiqeDerecesi = 0;
 
         System.out.print("Saati girin: ");
         int girilenSaat = mySc.nextInt();
@@ -20,8 +20,8 @@ public class task2 {
 
         for (int i = 0, j = 0; i <= saat; i++, j += 30) {
             if (girilenSaat == i) {
-                saatDerecesi = j;
-                System.out.println("Saat eqrebinin derecesi: " + j);
+                saatDerecesi = j+girilenDeqiqe/2.0;
+                System.out.println("Saat eqrebinin derecesi: " + saatDerecesi);
             }
         }
         for (int i = 0; i <= deqiqe; i++, deqiqeyeGoreDerece += 6) {
