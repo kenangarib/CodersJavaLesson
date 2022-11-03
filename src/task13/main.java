@@ -8,12 +8,12 @@ public class main {
         Student telebe1 = new Student();
         telebe1.name = "Kenan";
         telebe1.lastName = "Garib";
-        telebe1.age = 22;
+        telebe1.age = 35;
 
         Student telebe2 = new Student();
         telebe2.name = "Ferid";
         telebe2.lastName = "Audhweihf";
-        telebe2.age = 20;
+        telebe2.age = 18;
 
         Student telebe3 = new Student();
         telebe3.name = "Sahil";
@@ -37,10 +37,7 @@ public class main {
         Integer temp = 0;
 
 
-//        for (Student telebe: telebeArray) {
-//            Arrays.sort(telebeArray);
-//            System.out.println(telebe.age);
-//        }
+
 
         for (int i = 0; i < telebeArray.length - 1; i++) {
             for (int j = 0; j < telebeArray.length-1-i; j++) {
@@ -54,6 +51,10 @@ public class main {
 
 
 
+        }
+        for (Student telebe: telebeArray) {
+
+            System.out.println(telebe.name);
         }
 
     }
