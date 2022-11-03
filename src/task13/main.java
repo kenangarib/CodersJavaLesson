@@ -37,24 +37,24 @@ public class main {
         Integer temp = 0;
 
 
-        for (Student telebe: telebeArray) {
-            Arrays.sort(telebeArray);
-            System.out.println(telebe.age);
-        }
-
-//        for (int i = 0; i < telebeArray.length - 1; i++) {
-//            for (int j = 0; j < telebeArray.length-1-i; j++) {
-//                if (telebeArray[j].age > telebeArray[j + 1].age){
-//                    temp = telebeArray[j].age;
-//                    telebeArray[j].age = telebeArray[j+1].age;
-//                    telebeArray[j+1].age = temp;
-//
-//                }
-//            }
-//
-//
-//
+//        for (Student telebe: telebeArray) {
+//            Arrays.sort(telebeArray);
+//            System.out.println(telebe.age);
 //        }
+
+        for (int i = 0; i < telebeArray.length - 1; i++) {
+            for (int j = 0; j < telebeArray.length-1-i; j++) {
+                if (telebeArray[j].age > telebeArray[j + 1].age){
+                    temp = telebeArray[j].age;
+                    telebeArray[j].age = telebeArray[j+1].age;
+                    telebeArray[j+1].age = temp;
+
+                }
+            }
+
+
+
+        }
 
     }
 
