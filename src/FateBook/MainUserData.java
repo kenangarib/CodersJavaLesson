@@ -17,7 +17,7 @@ public class MainUserData {
     String inputNickname;
     String inputMailAdress;
     Integer inputAge;
-    String inputSex;
+    Character inputSex;
     String inputPassword;
 
 //    MainUserData(String name, String surname, String nick, String mail, Integer age, String sex){
