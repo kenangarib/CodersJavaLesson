@@ -10,9 +10,10 @@ import GSMarena.PhoneFunctions.ScreenPanels.ScreenPanels;
 public class Main {
     public static void main(String[] args) {
         S22 s22 = new S22();
+        System.out.println(s22);
 
-        S22[] s22arr = new S22[]{ScreenPanels, Processor, BackCamera};
-        Iphone13 ip13 = new Iphone13();
+
+
 
 
 

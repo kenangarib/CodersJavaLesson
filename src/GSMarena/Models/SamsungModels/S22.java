@@ -16,6 +16,15 @@ public class S22 extends Samsung implements BackCameraFunctions, ScreenPanelFunc
     Processor exynos = new Exynoss(2.4,"4mm",8);
 
     @Override
+    public String toString() {
+        return "S22{" +
+                "amoled=" + amoled +
+                ", backCamera=" + backCamera +
+                ", exynos=" + exynos +
+                '}';
+    }
+
+    @Override
     public void oisSupport() {
         System.out.println("Var");
     }
