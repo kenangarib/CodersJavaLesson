@@ -40,7 +40,7 @@ public class main {
 
 
         for (int i = 0; i < telebeArray.length - 1; i++) {
-            for (int j = 0; j < telebeArray.length-1-i; j++) {
+            for (int j = 0; j < telebeArray.length-1; j++) {
                 if (telebeArray[j].age > telebeArray[j + 1].age){
                     temp = telebeArray[j].age;
                     telebeArray[j].age = telebeArray[j+1].age;

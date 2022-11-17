@@ -7,6 +7,10 @@ public class Friends {
     private Integer age;
 
 
+    public Friends() {
+
+
+    }
 
     public Friends(String name, String surName, Integer age) {
         this.name = name;

@@ -9,28 +9,22 @@ public class Task1 {
 
         Scanner mySc = new Scanner(System.in);
 
-//        System.out.println(,);
+        int[] array = new int[mySc.nextInt()];
 
-//        int[] array = new int[mySc.nextInt()];
-//
-//        int i = 0;
-//
-//        while (mySc.nextInt()) {
-//            array[i] = mySc.nextInt();
-//            i++;
-//            if (i == array.length) {
-//                break;
-//            }
-//        }
+        int i = 0;
 
-//        for (int j = 0; j <array.length ; j++) {
-//            array[j]=mySc.nextInt();
-//        }
-//
-//        for (int j = 0; j < array.length; j++) {
-//            Arrays.sort(array);
-//            System.out.println(array[j]);
-//        }
+        while (mySc.hasNextInt()) {
+            array[i] = mySc.nextInt();
+            i++;
+            if (i == array.length) {
+                break;
+            }
+        }
+
+        for (int j = 0; j < array.length; j++) {
+            Arrays.sort(array);
+            System.out.println(array[j]);
+        }
 
 
     }

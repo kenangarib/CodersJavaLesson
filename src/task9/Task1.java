@@ -18,7 +18,7 @@ public class Task1 {
 
         for (int i = 0; i < elifba.length(); i++) {
             herf = elifba.charAt(i);
-            for (int j = 0; j < myStr.length(); j++) {
+            for (int j = 0; j < toplamHerf; j++) {
                 if (herf == myStr.charAt(j)) {
                     say++;
                 }

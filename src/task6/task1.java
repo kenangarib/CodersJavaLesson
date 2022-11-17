@@ -11,9 +11,6 @@ public class task1 {
         int left = 0;
         int right = arr.length - 1;
 
-
-
-
                 while (true) {
 
                     int mid = (left + right) / 2;

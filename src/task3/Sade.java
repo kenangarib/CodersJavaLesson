@@ -20,6 +20,7 @@ public class Sade {
         } while (inputNumber < 2);
 
 
+
         for (int i = 0; i <= inputNumber; i++) {
             for (int j = 2; j < i; j++) {
                 if (i % j != 0) {
@@ -41,4 +42,3 @@ public class Sade {
     }
 
 }
-

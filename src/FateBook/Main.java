@@ -1,6 +1,5 @@
 package FateBook;
 
-import java.util.Locale;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -27,7 +26,12 @@ public class Main {
         Scanner mySc = new Scanner(System.in);
         MainUserData user = new MainUserData();
         SignInAndSignUp sign = new SignInAndSignUp();
-        Friends friends = new Friends();
+        Friends angelina = new Friends("Angelina", "Jolie",45);
+        Friends scarlett = new Friends("Scarlett", "Johannson",33);
+        Friends galgadot = new Friends("Gal", "Gadot",31);
+        Friends robert = new Friends("Robert", "Dawner Junior",55);
+        Friends chris = new Friends("Chris", "Evans",40);
+        Friends tomhardy = new Friends("Tom", "Hardy",44);
         MainPage mainPage = new MainPage();
         String[] mainPageArray = new String[]{mainPage.mainPage, mainPage.profile, mainPage.friends, mainPage.exit, mainPage.addFriend};
 
@@ -64,8 +68,28 @@ public class Main {
                             user.inputPassword = mySc.next();
                             System.out.print("Yas: ");
                             user.inputAge = mySc.nextInt();
-                            System.out.print("Cinsiyyet: ");
-                            user.inputSex = mySc.next();
+                            do {
+                                System.out.print("Cinsiyyet: ( K ) Kisi  ( Q ) Qadin: ");
+                                user.inputSex = mySc.next().charAt(0);
+
+                                switch (user.inputSex){
+                                    case 'k':{
+                                        user.sex = "Kisi";
+                                    }
+                                    break;
+                                    case 'q':{
+                                        user.sex = "Qadin";
+                                    }
+                                    break;
+                                    default:{
+                                        System.out.println("Duzgun secim edin!");
+                                    }
+                                    break;
+                                }
+
+
+                            }while (!user.inputSex.equals('k') && !user.inputSex.equals('q'));
+
 
                             user.name = user.inputName;
                             user.surname = user.inputSurname;
@@ -73,14 +97,13 @@ public class Main {
                             user.mailAdreess = user.inputMailAdress;
                             user.password = user.inputPassword;
                             user.age = user.inputAge;
-                            user.sex = user.inputSex;
+
 
                             System.out.println("Siz artiq qeydiyyatdan kecmisinzi");
 
                             System.out.println(sign.signIn);
                             signInToLowerCase = mySc.next().charAt(0);
                             if (signInToLowerCase == 'g') {
-
 
 //                                if (!user.inputNickname.equals(user.nickname) && !user.inputPassword.equals(user.password)){
 //                                    System.out.println("Istifadeci Adi veya Sifre yanlisdir");
@@ -100,18 +123,11 @@ public class Main {
                                     }
 
                                 } while (!Objects.equals(user.inputPassword, user.password) && !Objects.equals(user.inputNickname, user.nickname));
-
-
                             }
-
                         }
                         break;
                     }
-                } else {
-
-
                 }
-
             }
             break;
             case 'q': {
@@ -133,8 +149,27 @@ public class Main {
                 user.inputPassword = mySc.next();
                 System.out.print("Yas: ");
                 user.inputAge = mySc.nextInt();
-                System.out.print("Cinsiyyet: ");
-                user.inputSex = mySc.next();
+                do {
+                    System.out.print("Cinsiyyet: ( K ) Kisi  ( Q ) Qadin: ");
+                    user.inputSex = mySc.next().charAt(0);
+
+                    switch (user.inputSex){
+                        case 'k':{
+                            user.sex = "Kisi";
+                        }
+                        break;
+                        case 'q':{
+                            user.sex = "Qadin";
+                        }
+                        break;
+                        default:{
+                            System.out.println("Duzgun secim edin!");
+                        }
+                        break;
+                    }
+
+
+                }while (!user.inputSex.equals('k') && !user.inputSex.equals('q'));
 
                 user.name = user.inputName;
                 user.surname = user.inputSurname;
@@ -142,7 +177,7 @@ public class Main {
                 user.mailAdreess = user.inputMailAdress;
                 user.password = user.inputPassword;
                 user.age = user.inputAge;
-                user.sex = user.inputSex;
+
 
 
                 System.out.println("Siz artiq qeydiyyatdan kecmisinzi");
@@ -170,20 +205,12 @@ public class Main {
                         }
 
                     } while (!Objects.equals(user.inputPassword, user.password) && !Objects.equals(user.inputNickname, user.nickname));
-
-
                 }
-
             }
             break;
             default: {
                 System.out.println("duzgun emeliyyat secin!");
             }
-            {
-
-
-            }
-
 
         }
 
@@ -244,73 +271,73 @@ public class Main {
                 addFriend = mySc.next();
                 String addFriendLower = addFriend.toLowerCase();
                 if (Objects.equals(addFriendLower, "angelina Jolie") || Objects.equals(addFriendLower, "angelina") || Objects.equals(addFriendLower, "jolie")) {
-                    Friends.AngelinaJolie angelina = new Friends.AngelinaJolie();
-                    System.out.println(angelina.name + " " + angelina.surName + " ( P ) Profiline Bax" );
+                    System.out.println(angelina.getName() + " " + angelina.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] angelinaarr = new Friends[]{angelina};
+                        for (Friends userProfileArr : angelinaarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }
 
                 else if (Objects.equals(addFriendLower, "scarlett johannson") || Objects.equals(addFriendLower, "scarlett") || Objects.equals(addFriendLower, "johannson")) {
-                    Friends.ScarlettJohannson scarlett = new Friends.ScarlettJohannson();
-                    System.out.println(scarlett.name + " " + scarlett.surName + " ( P ) Profiline Bax" );
+                    System.out.println(scarlett.getName() + " " + scarlett.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{scarlett.name, scarlett.surName, scarlett.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] scarlettarr = new Friends[]{scarlett};
+                        for (Friends userProfileArr : scarlettarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }
 
                 else if (Objects.equals(addFriendLower, "gal gadot") || Objects.equals(addFriendLower, "gal") || Objects.equals(addFriendLower, "gadot")) {
-                    Friends.GalGadot galgadot = new Friends.GalGadot();
-                    System.out.println(galgadot.name + " " + galgadot.surName + " ( P ) Profiline Bax" );
+                    System.out.println(galgadot.getName() + " " + galgadot.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{galgadot.name, galgadot.surName, galgadot.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] galgadotarr = new Friends[]{galgadot};
+                        for (Friends userProfileArr : galgadotarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }
 
-                else if (Objects.equals(addFriendLower, "robert dawner junior") || Objects.equals(addFriendLower, "junior") || Objects.equals(addFriendLower, "robert") || Objects.equals(addFriendLower, "dawner")) {
-                    Friends.RobertDawnerJunior robert = new Friends.RobertDawnerJunior();
-                    System.out.println(robert.name + " " + robert.surName + " ( P ) Profiline Bax" );
+                else if (Objects.equals(addFriendLower, "robert dawner junior") || Objects.equals(addFriendLower, "robert") || Objects.equals(addFriendLower, "junior") || Objects.equals(addFriendLower, "dawner")) {
+                    System.out.println(robert.getName() + " " + robert.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{robert.name, robert.surName, robert.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] robertarr = new Friends[]{robert};
+                        for (Friends userProfileArr : robertarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }
 
-                else if (Objects.equals(addFriendLower, "chris Evans") || Objects.equals(addFriendLower, "evans") || Objects.equals(addFriendLower, "chris")) {
-                    Friends.ChrisEvans evans = new Friends.ChrisEvans();
-                    System.out.println(evans.name + " " + evans.surName + " ( P ) Profiline Bax" );
+                else if (Objects.equals(addFriendLower, "chris evans") || Objects.equals(addFriendLower, "chris") || Objects.equals(addFriendLower, "evans")) {
+                    System.out.println(chris.getName() + " " + chris.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{evans.name, evans.surName, evans.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] chrisarr = new Friends[]{chris};
+                        for (Friends userProfileArr : chrisarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }
 
                 else if (Objects.equals(addFriendLower, "tom hardy") || Objects.equals(addFriendLower, "tom") || Objects.equals(addFriendLower, "hardy")) {
-                    Friends.TomHardy tom = new Friends.TomHardy();
-                    System.out.println(tom.name + " " + tom.surName + " ( P ) Profiline Bax" );
+                    System.out.println(tomhardy.getName() + " " + tomhardy.getSurName() + " ( P ) Profiline Bax" );
                     char lookProfile = mySc.next().charAt(0);
                     if (lookProfile == 'p') {
-                        String[] userProfile = new String[]{tom.name, tom.surName, tom.age};
-                        for (String userProfileArr : userProfile) {
-                            System.out.println(userProfileArr);
+                        //String[] userProfile = new String[]{angelina.name, angelina.surName, angelina.age};
+                        Friends[] tomhardyarr = new Friends[]{tomhardy};
+                        for (Friends userProfileArr : tomhardyarr) {
+                            System.out.println(userProfileArr.getName()+" "+userProfileArr.getSurName()+" "+userProfileArr.getAge());
                         }
                     }
                 }

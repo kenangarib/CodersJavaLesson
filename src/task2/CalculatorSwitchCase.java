@@ -1,4 +1,4 @@
-package az.coder.task1;
+package task2;
 
 import java.util.Scanner;
 
