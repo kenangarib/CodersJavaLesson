@@ -7,4 +7,11 @@ public class Amoled extends ScreenPanels{
 
     public Amoled() {
     }
+
+    @Override
+    public String toString() {
+        return "Amoled{" +
+                "amoled=" + amoled +
+                '}';
+    }
 }

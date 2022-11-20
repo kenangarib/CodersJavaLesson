@@ -7,4 +7,11 @@ public class IPS extends ScreenPanels{
 
     public IPS() {
     }
+
+    @Override
+    public String toString() {
+        return "IPS{" +
+                "ips=" + ips +
+                '}';
+    }
 }
