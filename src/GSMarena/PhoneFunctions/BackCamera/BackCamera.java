@@ -21,6 +21,17 @@ public class BackCamera extends CellPhone implements BackCameraFunctions {
     }
 
     @Override
+    public String toString() {
+        return "BackCamera{" +
+                "megaPixel=" + megaPixel +
+                ", model='" + model + '\'' +
+                ", zoom=" + zoom +
+                ", wideAngle=" + wideAngle +
+                ", diafram=" + diafram +
+                '}';
+    }
+
+    @Override
     public void oisSupport() {
 
     }

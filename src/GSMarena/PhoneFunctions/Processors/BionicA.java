@@ -7,4 +7,11 @@ public class BionicA extends Processor {
 
     public BionicA() {
     }
+
+    @Override
+    public String toString() {
+        return "BionicA{" +
+                "bionicA=" + bionicA +
+                '}';
+    }
 }

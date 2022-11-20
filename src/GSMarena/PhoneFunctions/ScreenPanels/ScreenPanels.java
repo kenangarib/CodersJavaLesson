@@ -37,4 +37,18 @@ public class ScreenPanels extends Brand implements ScreenPanelFunctions {
     public void protector() {
 
     }
+
+    @Override
+    public String toString() {
+        return "ScreenPanels{" +
+                "amoled=" + amoled +
+                ", oled=" + oled +
+                ", ips=" + ips +
+                ", name='" + name + '\'' +
+                ", rate=" + rate +
+                ", dpi=" + dpi +
+                ", resolution=" + resolution +
+                ", nits=" + nits +
+                '}';
+    }
 }

@@ -20,4 +20,16 @@ public class Processor extends CellPhone {
     public Processor() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Processor{" +
+                "exynoss=" + exynoss +
+                ", bionicA=" + bionicA +
+                ", snapdragon=" + snapdragon +
+                ", ghz=" + ghz +
+                ", mm='" + mm + '\'' +
+                ", cores=" + cores +
+                '}';
+    }
 }

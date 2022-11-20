@@ -7,4 +7,11 @@ public class Oled extends ScreenPanels{
 
     public Oled() {
     }
+
+    @Override
+    public String toString() {
+        return "Oled{" +
+                "oled=" + oled +
+                '}';
+    }
 }

@@ -7,10 +7,10 @@ import GSMarena.PhoneFunctions.ScreenPanels.ScreenPanels;
 
 public abstract class CellPhone {
 
-    Brand brand = new Brand();
-    ScreenPanels screenPanel = new ScreenPanels();
-    BackCamera backCamera = new BackCamera();
-    Processor processor = new Processor();
+//    Brand brand = new Brand();
+//    ScreenPanels screenPanel = new ScreenPanels();
+//    BackCamera backCamera = new BackCamera();
+//    Processor processor = new Processor();
 
     private String frontCameraModel;
     private String backCameraModel;

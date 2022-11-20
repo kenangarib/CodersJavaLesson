@@ -7,4 +7,11 @@ public class Exynoss extends Processor {
 
     public Exynoss() {
     }
+
+    @Override
+    public String toString() {
+        return "Exynoss{" +
+                "exynoss=" + exynoss +
+                '}';
+    }
 }
