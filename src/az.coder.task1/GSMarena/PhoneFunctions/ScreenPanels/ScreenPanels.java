@@ -40,12 +40,7 @@ public class ScreenPanels  implements ScreenPanelFunctions {
 
     @Override
     public String toString() {
-        return "ScreenPanels{" +
-                "name='" + name + '\'' +
-                ", rate=" + rate +
-                ", dpi=" + dpi +
-                ", resolution=" + resolution +
-                ", nits=" + nits +
-                '}';
+        return
+                "\nName: " + name +  " \nRate: " + rate + " \nDpi: " + dpi + " \nResolution: " + resolution + " \nNits: " + nits;
     }
 }

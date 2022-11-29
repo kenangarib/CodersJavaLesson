@@ -62,8 +62,7 @@ public class Iphone13 extends Apple implements BackCameraFunctions, ScreenPanelF
 
     @Override
     public String toString() {
-        return "Iphone13{\n" +
-                "screenPanel=" + screenPanel +
+        return "Iphone13: \n"  + screenPanel +
                 ", backCamera=" + backCamera +
                 ", processor=" + processor +
                 ", RAM=" + RAM +

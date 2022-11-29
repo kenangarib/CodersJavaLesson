@@ -8,10 +8,5 @@ public class Snapdragon extends Processor {
     public Snapdragon() {
     }
 
-    @Override
-    public String toString() {
-        return "Snapdragon{" +
-                "snapdragon=" + snapdragon +
-                '}';
-    }
+
 }

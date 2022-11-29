@@ -62,14 +62,4 @@ super();
 
     }
 
-    @Override
-    public String toString() {
-        return "BackCamera{" +
-                "megaPixel=" + megaPixel +
-                ", model='" + model + '\'' +
-                ", zoom=" + zoom +
-                ", wideAngle=" + wideAngle +
-                ", diafram=" + diafram +
-                '}';
-    }
 }
