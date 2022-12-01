@@ -1,15 +1,15 @@
 package az.coder.task1.BOXgeneric;
 
-public class RTX3060 extends BoxGeneric{
-    public RTX3060(Object ghz, Object vRam) {
-        super(ghz, vRam);
+public class RTX3060 {
+
+    String name;
+
+    public RTX3060(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "RTX3060{" +
-                "ghz=" + ghz +
-                ", vRam=" + vRam +
-                '}';
+        return name;
     }
 }

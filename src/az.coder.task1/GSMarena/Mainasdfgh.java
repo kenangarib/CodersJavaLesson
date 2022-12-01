@@ -13,7 +13,7 @@ public class Mainasdfgh {
     public static void main(String[] args) {
 
 
-        Apple apple= new Iphone13(256, 6);
+        Apple apple= new Iphone13();
         System.out.println(apple);
 
 //        LocalDateTime.of(123, Month.AUGUST, 12 ,11,11);

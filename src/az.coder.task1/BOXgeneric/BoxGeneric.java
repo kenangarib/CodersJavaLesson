@@ -3,12 +3,11 @@ package az.coder.task1.BOXgeneric;
 public class BoxGeneric<T> {
 
 
-    T ghz;
-    T vRam;
+    T t;
 
-    public BoxGeneric(T ghz, T vRam) {
-        this.ghz = ghz;
-        this.vRam = vRam;
+
+    public BoxGeneric(T t) {
+        this.t = t;
     }
 
     public BoxGeneric(){
@@ -17,9 +16,6 @@ public class BoxGeneric<T> {
 
     @Override
     public String toString() {
-        return "BoxGeneric{" +
-                "ghz=" + ghz +
-                ", vRam=" + vRam +
-                '}';
+        return t.toString();
     }
 }

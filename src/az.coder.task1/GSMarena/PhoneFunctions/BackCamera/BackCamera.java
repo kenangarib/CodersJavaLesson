@@ -23,13 +23,7 @@ super();
 
     @Override
     public String toString() {
-        return "BackCamera{" +
-                "megaPixel=" + megaPixel +
-                ", model='" + model + '\'' +
-                ", zoom=" + zoom +
-                ", wideAngle=" + wideAngle +
-                ", diafram=" + diafram +
-                '}';
+        return "\nBackCamera\n " + "Megapixel: " + megaPixel + ", Camera model: " + model +  ", Zoom: " + zoom + ", WideAngle: " + wideAngle + ", Diafram: " + diafram;
     }
 
     @Override

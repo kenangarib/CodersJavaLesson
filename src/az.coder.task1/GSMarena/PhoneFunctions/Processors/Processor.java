@@ -3,15 +3,15 @@ package az.coder.task1.GSMarena.PhoneFunctions.Processors;
 
 import az.coder.task1.GSMarena.CellPhone;
 
-public class Processor extends CellPhone {
+public class Processor <T> extends CellPhone {
 
 
 
-    Double ghz;
-    String mm;
-    Integer cores;
+    T ghz;
+    T mm;
+    T cores;
 
-    public Processor(Double ghz, String mm, Integer cores) {
+    public Processor(T ghz, T mm, T cores) {
         this.ghz = ghz;
         this.mm = mm;
         this.cores = cores;
@@ -22,10 +22,6 @@ super();
 
     @Override
     public String toString() {
-        return "Processor{" +
-                "ghz=" + ghz +
-                ", mm='" + mm + '\'' +
-                ", cores=" + cores +
-                '}';
+        return "\nProcessor\n " + "GHZ: " + ghz + ", mm: " + mm  + ", Cores: " + cores;
     }
 }

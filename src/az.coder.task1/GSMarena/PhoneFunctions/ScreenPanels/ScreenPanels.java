@@ -4,17 +4,17 @@ package az.coder.task1.GSMarena.PhoneFunctions.ScreenPanels;
 
 
 
-public class ScreenPanels  implements ScreenPanelFunctions {
+public class ScreenPanels <T> implements ScreenPanelFunctions {
 
 
-    String name;
-    Integer rate;
-    Integer dpi;
-    Integer resolution;
-    Integer nits;
+    T name;
+    T rate;
+    T dpi;
+    T resolution;
+    T nits;
 
 
-    public ScreenPanels(String name,Integer rate, Integer dpi, Integer resolution, Integer nits) {
+    public ScreenPanels(T name,T rate, T dpi, T resolution, T nits) {
         this.name = name;
         this.rate = rate;
         this.dpi = dpi;
@@ -41,6 +41,6 @@ public class ScreenPanels  implements ScreenPanelFunctions {
     @Override
     public String toString() {
         return
-                "\nName: " + name +  " \nRate: " + rate + " \nDpi: " + dpi + " \nResolution: " + resolution + " \nNits: " + nits;
+                "\nScreen Panel\n " + "Name: " + name +  ",  Rate: " + rate + ",  Dpi: " + dpi + ",  Resolution: " + resolution + ",  Nits: " + nits;
     }
 }
