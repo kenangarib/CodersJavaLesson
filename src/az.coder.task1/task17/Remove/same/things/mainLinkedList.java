@@ -26,10 +26,10 @@ public class mainLinkedList {
         linkedList2.add(10);*/
 
         for (int i = 1; i <= 10; i++) {
-            linkedList1.add(i);
+            linkedList1.offer(i);
         }
         for (int i = 6; i <= 14; i++) {
-            linkedList2.add(i);
+            linkedList2.offer(i);
         }
         method.method1(linkedList1,linkedList2);
 
