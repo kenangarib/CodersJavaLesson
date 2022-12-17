@@ -1,25 +1,28 @@
 package az.coder.task1.GSMarena.PhoneFunctions.ScreenPanels;
 
 
+import java.util.LinkedList;
+
+public class ScreenPanels<T> implements ScreenPanelFunctions {
 
 
-
-public class ScreenPanels <T> implements ScreenPanelFunctions {
-
-
-    T name;
+    T type;
     T rate;
     T dpi;
     T resolution;
     T nits;
+    T protection;
+    T size;
 
 
-    public ScreenPanels(T name,T rate, T dpi, T resolution, T nits) {
-        this.name = name;
+    public ScreenPanels(T type, T rate, T dpi, T resolution, T nits, T protection, T size) {
+        this.type = type;
         this.rate = rate;
         this.dpi = dpi;
         this.resolution = resolution;
         this.nits = nits;
+        this.protection = protection;
+        this.size = size;
     }
 
     public ScreenPanels() {
@@ -41,6 +44,7 @@ public class ScreenPanels <T> implements ScreenPanelFunctions {
     @Override
     public String toString() {
         return
-                "\nScreen Panel\n " + "Name: " + name +  ",  Rate: " + rate + ",  Dpi: " + dpi + ",  Resolution: " + resolution + ",  Nits: " + nits;
+                "\nScreen Panel\n " + "Type: " + type + ",  Rate: " + rate +" hz"+ ",  Dpi: " + dpi +
+                 ",  Resolution: " + resolution   + ", Size: " + size + " inches" +  ",  Nits: " + nits +", Protection: " + protection;
     }
 }

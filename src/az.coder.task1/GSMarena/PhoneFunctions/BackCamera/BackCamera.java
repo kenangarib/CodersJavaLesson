@@ -3,14 +3,14 @@ package az.coder.task1.GSMarena.PhoneFunctions.BackCamera;
 
 import az.coder.task1.GSMarena.CellPhone;
 
-public class BackCamera extends CellPhone implements BackCameraFunctions {
-    Integer megaPixel;
-    String model;
-    Integer zoom;
-    Integer wideAngle;
-    Double diafram;
+public class BackCamera<T> extends CellPhone implements BackCameraFunctions {
+    T megaPixel;
+    T model;
+    T zoom;
+    T wideAngle;
+    T diafram;
 
-    public BackCamera(Integer megaPixel, String model, Integer zoom, Integer wideAngle, Double diafram) {
+    public BackCamera(T megaPixel, T model, T zoom, T wideAngle, T diafram) {
         this.megaPixel = megaPixel;
         this.model = model;
         this.zoom = zoom;

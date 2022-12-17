@@ -20,6 +20,7 @@ public class Methods<T> {
                 if (newList.get(i).equals(newList.get(j))){
                     newList2.add(i+1);
                     newList.remove(j);
+
                     j--;
                 }
             }

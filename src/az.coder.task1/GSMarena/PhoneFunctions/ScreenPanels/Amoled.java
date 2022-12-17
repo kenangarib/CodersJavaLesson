@@ -1,8 +1,8 @@
 package az.coder.task1.GSMarena.PhoneFunctions.ScreenPanels;
 
 public class Amoled extends ScreenPanels{
-    public Amoled(String name, Integer rate, Integer dpi, Integer resolution, Integer nits) {
-        super(name, rate, dpi, resolution, nits);
+    public Amoled(Object type, Object rate, Object dpi, Object resolution, Object nits, Object protection, Object size) {
+        super(type, rate, dpi, resolution, nits, protection, size);
     }
 
     public Amoled() {
