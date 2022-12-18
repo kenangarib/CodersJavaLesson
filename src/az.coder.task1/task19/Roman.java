@@ -5,7 +5,7 @@ public class Roman {
     public static String Roman(int num) {
         int reqemler[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         String[] romanlar = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        StringBuilder sb = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
 
 /*        Map<Integer,String> map = new HashMap<>();
         map.put(1000,"M");
@@ -34,12 +34,12 @@ public class Roman {
 
         for (int i = 0; i < reqemler.length; i++) {
             while (num >= reqemler[i]) {
-                sb.append(romanlar[i]);
+                builder.append(romanlar[i]);
                 num -= reqemler[i];
             }
         }
 
-        return sb.toString();
+        return builder.toString();
     }
 
     public static void main(String[] args) {
