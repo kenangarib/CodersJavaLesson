@@ -13,7 +13,6 @@ public class PhoneSearchMethod{
             case "iphone 13":
             case "iphone13":{
                 for (Object findModel: phoneList) {
-                    newPHone = (String) findModel;
                     System.out.println(findModel);
                 }
             }
